@@ -76,11 +76,28 @@ fun BookList(
     ) {
         items(books) { book ->
             BookItem(book = book)
-        }
-    }
-}
+            /**
+             *BONUS 1: Book Counter Feature
+             * Displays the total number of books at the top of the screen
+             */
+            Column(modifier = modifier) {
+                Text(
+                    text = "Total Books: ${books.size}",
+                    modifier = Modifier.padding(16.dp),
+                    style = MaterialTheme.typography.titleMedium
+                )
+                LazyColumn(
+                    contentPadding = PaddingValues(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    items(books) { book ->
+                        BookItem(book = book)
+                    }
+                }
+            }
 
-/**
+        }
+        /**
  * Composable for displaying a single book item
  */
 @Composable
