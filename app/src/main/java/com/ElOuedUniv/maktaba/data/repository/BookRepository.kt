@@ -23,11 +23,26 @@ class BookRepository {
      * )
      */
     private val booksList = listOf(
-        Book(isbn = "", title = "Clean Code", nbPages = 0),
-        Book(isbn = "", title = "The Pragmatic Programmer", nbPages = 0),
-        Book(isbn = "", title = "Design Patterns", nbPages = 0),
-        Book(isbn = "", title = "Refactoring", nbPages = 0),
-        Book(isbn = "", title = "Head First Design Patterns", nbPages = 0)
+
+        Book(isbn = "978-0132350884", title = "Clean Code", nbPages = 464),
+        Book(isbn = "978-0135957059", title = "The Pragmatic Programmer", nbPages = 352),
+        Book(isbn = "978-0201633610", title = "Design Patterns", nbPages = 395),
+        Book(isbn = "978-0134757599", title = "Refactoring", nbPages = 448),
+        Book(isbn = "978-0596007126", title = "Head First Design Patterns", nbPages = 638),
+
+
+        Book(isbn = "978-0-262-03384-8", title = "Introduction to Algorithms", nbPages = 1312),
+        Book(isbn = "978-0-13-110362-7", title = "The C Programming Language", nbPages = 288),
+        Book(isbn = "978-0-13-468599-1", title = "Effective Java", nbPages = 416),
+        Book(isbn = "978-0-596-52068-7", title = "Learning SQL", nbPages = 336),
+        Book(isbn = "978-1-491-92424-6", title = "Kotlin in Action", nbPages = 360),
+
+
+        Book(isbn = "978-1617294945", title = "Grokking Algorithms", nbPages = 288),
+        Book(isbn = "978-0134494166", title = "Clean Architecture", nbPages = 432),
+        Book(isbn = "978-0596009205", title = "Head First Java", nbPages = 720),
+        Book(isbn = "978-1491950296", title = "Building Microservices", nbPages = 616),
+        Book(isbn = "978-0137081073", title = "The Clean Coder", nbPages = 256)
     )
 
     /**
