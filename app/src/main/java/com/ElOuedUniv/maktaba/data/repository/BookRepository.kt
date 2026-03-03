@@ -73,4 +73,9 @@ class BookRepository {
     fun getBookByIsbn(isbn: String): Book? {
         return booksList.find { it.isbn == isbn }
     }
+    // BONUS 3 - Get books with more than 400 pages
+    fun getLongBooks(): List<Book> {
+        return booksList.filter { it.nbPages > 400 }
+    }
+
 }
